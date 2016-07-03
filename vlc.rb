@@ -27,6 +27,8 @@ $vlc_socket = nil
 def start_vlc
     args = ['--extraintf', 'rc', '--rc-host', Socket::getaddrinfo(Socket.gethostname,"echo",Socket::AF_INET)[0][3] + ":13377"]
     Process.spawn vlc, *args
+    sleep(5)
+    puts "Connecting to VLC"
     $vlc_socket = TCPSocket.new Socket::getaddrinfo(Socket.gethostname,"echo",Socket::AF_INET)[0][3], 13377
 end
 
