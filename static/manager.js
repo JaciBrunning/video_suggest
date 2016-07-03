@@ -20,13 +20,17 @@ $(document).ready(function() {
 });
 
 $('#heap_reject_button').click(function() {
-    $.post("_in/reject.html", { 'url': heap.val() });
-    $("#heap_list option[value='" + heap.val() + "']").remove();
+    $.post("_in/reject.html", { 'urls': heap.val() });
+    heap.val().forEach(function (el) {
+        $("#heap_list option[value='" + el + "']").remove();
+    });
 });
 
 $('#heap_approve_button').click(function() {
-    $.post("_in/approve.html", { 'url': heap.val() });
-    $("#heap_list option[value='" + heap.val() + "']").remove();
+    $.post("_in/approve.html", { 'urls': heap.val() });
+    heap.val().forEach(function (el) {
+        $("#heap_list option[value='" + el + "']").remove();
+    });
 });
 
 $("#prev").click(function() {
@@ -43,4 +47,12 @@ $("#play").click(function() {
 
 $("#next").click(function() {
     $.post("_in/next.html");
+});
+
+$("#save").click(function() {
+    $.post("_in/save.html");
+})
+
+$("#load").click(function() {
+    $.post("_in/load.html");
 });

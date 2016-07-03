@@ -30,11 +30,11 @@ post '/_in/submit.html' do
 end
 
 post '/_in/approve.html' do
-    promote params['url'][0]
+    params['urls'].each  { |x| promote x }
 end
 
 post '/_in/reject.html' do 
-    reject params['url'][0]
+    params['urls'].each  { |x| reject x }
 end
 
 post '/_in/prev.html' do
@@ -51,4 +51,12 @@ end
 
 post '/_in/next.html' do
     vlc_next
+end
+
+post '/_in/save.html' do
+    save_playlist
+end
+
+post '/_in/load.html' do
+    load_playlist
 end

@@ -46,6 +46,14 @@ h2 {
 		left: 12rem;
 		bottom: 0;
 	}
+	#save {
+		left: 20rem;
+		bottom: 0;
+	}
+	#load {
+		left: 24rem;
+		bottom: 0;
+	}
 	#reopen {
 		right: 0;
 		bottom: 0;
