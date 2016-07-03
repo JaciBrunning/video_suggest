@@ -1,0 +1,112 @@
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	padding: 1rem;
+}
+#controls {
+	background: ThreeDFace;
+	color: #808080;
+	font-size: 2em;
+	height: 6rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+	#controls button {
+		width: 4rem;
+		height: 4rem;
+		font-family: Symbola;
+		font-size: 3rem;
+		vertical-align: middle;
+		position: absolute;
+		bottom: 0;
+	}
+	#seek {
+		margin: 0;
+		width: 100%;
+		height: 2rem;
+		position: absolute;
+		top: 0;
+	}
+    #prev {
+        left: 0rem;
+        bottom: 0;
+    }
+	#pp {
+		left: 4rem;
+		bottom: 0;
+	}
+    #play {
+        left: 8rem;
+        bottom: 0;
+    }
+	#next {
+		left: 12rem;
+		bottom: 0;
+	}
+	#reopen {
+		right: 0;
+		bottom: 0;
+	}
+	#playing {
+		height: 3rem;
+		position: absolute;
+		left: 9rem;
+		right: 20rem;
+		bottom: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	#time {
+		height: 3rem;
+		position: absolute;
+		right: 5rem;
+		bottom: 0;
+	}
+	#title, #elapsed, #total {
+		color: black;
+	}
+#heap_section, #queue_section, #history_section {
+	position: absolute;
+	top: 0;
+	bottom: 7rem;
+}
+	#heap_section button, #queue_section button, #history_section button {
+		font-family: Symbola;
+		font-size: 2em;
+		position: absolute;
+		bottom: 0;
+	}
+	#heap_approve_button {
+		width: 50% !important;
+		left: 50%;
+	}
+	#heap_reject_button {
+		width: 50%;
+		right: 50%;
+	}
+	#queue_delete_button, #history_replay_button {
+		width: 100%;
+	}
+	#heap_section {
+		left: 2.5%;
+		width: 30%;
+	}
+	#queue_section {
+		left: 35%;
+		width: 30%;
+	}
+	#history_section {
+		left: 67.5%;
+		width: 30%;
+	}
+	#heap_list, #queue_list, #history_list {
+		font-size: 1.5em;
+		width: 100%;
+		position: absolute;
+		top: 9rem;
+		bottom: 3rem;
+	}
