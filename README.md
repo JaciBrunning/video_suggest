@@ -14,8 +14,8 @@ On your projector computer, run
 ruby run.rb
 ```
 This will start a VLC instance that is being controlled by the video_suggest program. It will also
-start a webserver on port `13377`. 
+start a webserver on port `13337`. 
 
-Other computers can access `http://<ip>:13377/` in their web browser to submit youtube URLs to be viewed.
-You yourself can access `http://<ip>:13377/manager` in your web browser to approve or reject video suggestions, 
+Other computers can access `http://<ip>:13337/` in their web browser to submit youtube URLs to be viewed.
+You yourself can access `http://<ip>:13337/manager` in your web browser to approve or reject video suggestions, 
 and control playback through the web interface.
