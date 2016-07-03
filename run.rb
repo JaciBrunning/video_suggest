@@ -5,6 +5,7 @@ require_relative 'manq'
 
 set :public_folder, "static"
 set :port, 13337
+set :bind, '0.0.0.0'
 
 start_vlc
 
